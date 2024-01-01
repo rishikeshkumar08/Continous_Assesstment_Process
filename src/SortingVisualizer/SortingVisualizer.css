@@ -1,0 +1,103 @@
+.array-container {
+    position: absolute;
+    left: 19%;
+    top: 15vh; 
+    width: 80%;
+  }
+  
+  .array-bar {
+    width: 0.4%;
+    display: inline-block;
+    margin: 0 0.1%;
+    border-radius: 15px;
+  }
+
+  .navbar{
+    left: 0;
+    top: 0;
+    position: fixed;
+    padding-left: 5%;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 2.5vh;
+  }
+
+  .navbarCen{
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vh;
+  }
+
+  .sideBar{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    padding-top: 10vh;
+    padding-right: 2%;
+    background-color: #003747;
+  }
+
+    .button {
+      display: inline-block;
+      background-color: rgb(6, 102, 129);
+      padding: 6%;
+      width: 80%;
+      height: 7vh;
+      color: white;
+      text-align: center;
+      border: 8px #cccccc;
+      border-radius: 1.5vh;
+      font-size: 2vh;
+      cursor: pointer;
+      margin: 1vh;
+      -webkit-transition: all 0.3s; /* add this line, chrome, safari, etc */
+      -moz-transition: all 0.3s; /* add this line, firefox */
+      -o-transition: all 0.3s; /* add this line, opera */
+      transition: all 0.3s; /* add this line */
+    }
+    .button:hover {
+      background-color: turquoise;
+    }
+
+
+    @media(max-width: 768px){
+      .array-container {
+        position: absolute;
+        left: 0;
+        top: 18vh; 
+        width: 100%;
+        
+      }
+      .navbar{
+        position: fixed;
+        font-size: 1.5vh;
+        height: 5vh;
+      }
+      .navbarCen{
+        font-size: 0%;
+      }
+      .sideBar{
+        left: 0;
+        top: 0;
+        align-items: center;
+        padding-right: 5vw;
+        height: 16vh;
+        width: 100%;
+        padding-top: 6vh;
+    }
+    .button {
+      padding: 1vh;
+      width: 30%;
+      height: 4vh;
+      border-radius: 1vh;
+      font-size: 1.5vh;
+      margin: .1rem;
+    }
+    }
